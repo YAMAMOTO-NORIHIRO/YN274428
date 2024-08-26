@@ -14,6 +14,8 @@
                 <div class='post'>
                     <a href="/posts/{{ $post->id }}"><h2 class='title'>{{ $post->title }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
+                                        <!-- 編集ボタン -->
+                    <a href="/posts/{{ $post->id }}/edit">編集</a>
                 </div>
             @endforeach
         </div>
