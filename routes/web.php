@@ -16,3 +16,6 @@ Route::get('/', [PostController::class, 'index']);
 Route::get('/posts/create', [PostController::class, 'create']);
 Route::get('/posts/{post}', [PostController::class,'show']);
 Route::post('/posts', [PostController::class, 'store']);//データを保存するためのstore
+Route::get('/posts/{post}/edit',[postController::class, 'edit']);
+ROute::put('posts/{post}', [PostContoroller::class, 'update']);
+Route::delete('/posts/{post}', [PostController::class,'delete']);
